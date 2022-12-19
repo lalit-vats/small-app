@@ -1,0 +1,49 @@
+@import "../../color.scss";
+
+.footerWrapper {
+    margin-top: 20px;
+    background-color: $primery;
+    padding-top: 20px;
+
+    img {
+        width: 200px;
+    }
+
+    .socialIconWrapper {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+        margin-left: 18px;
+
+        .socialIcons {
+            display: flex;
+            background-color: $secondery;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .productPart {
+        color: $secondery;
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        .services {
+            display: flex;
+            gap: 10px 0;
+            flex-direction: column;
+        }
+    }
+    .bottomFooter{
+        padding: 20px;
+        background-color: $tintgrey;
+        text-align: center;
+        margin-top: 30px;
+        color: $secondery;
+    }
+}

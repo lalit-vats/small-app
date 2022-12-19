@@ -1,0 +1,32 @@
+@import '../../color.scss';
+
+.header {
+    padding: 15px 0;
+    background-color: $primery;
+    border-bottom: solid  1px $secondery;
+
+    img {
+        width: 250px;
+    }
+
+    .headerRight {
+        display: flex;
+        justify-content: end;
+        color: $secondery;
+        align-items: center;
+        width: 100%;
+
+        a {
+            color: $secondery;
+            font-size: 18px;
+            margin-right: 30px;
+        }
+    }
+
+
+
+
+
+
+
+}

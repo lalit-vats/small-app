@@ -1,0 +1,45 @@
+@import '../../color.scss';
+
+.hero {
+    background-color: $primery;
+    color: $secondery;
+    padding: 110px 0;
+    position: relative;
+    padding-bottom: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+
+    .heroText {
+        button {
+            margin-top: 60px;
+            padding: 12px 50px;
+            font-weight: 700;
+        }
+    }
+
+    .lowerHero {
+        background-color: $secondery;
+        border-radius: 6px;
+        padding: 50px;
+        color: $primery;
+        position: absolute;
+        bottom: -140px;
+        max-width: 80%;
+    }
+
+    .wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        p {
+            color: $tintgrey;
+            font-weight: 500;
+            width: 80%;
+        }
+
+    }
+}
