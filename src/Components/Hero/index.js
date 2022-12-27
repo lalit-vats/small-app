@@ -26,6 +26,9 @@ const lowerHeroData = [
 ]
 
 
+
+
+
 const Hero = () => {
     return (
         <div className="hero">
@@ -51,24 +54,26 @@ const Hero = () => {
                 </Container>
             </div>
 
-            <div className="lowerHero">
-                <Grid container spacing={5}>
-                    {
-                        lowerHeroData.map((d, i) => (
-                            <Grid item xs={12} lg={4} key={i}>
-                                <div className="wrapper">
-                                    <d.icon size={50} color={'#09288E'} />
-                                    <Typography variant="h5">
-                                        {d.title}
-                                    </Typography>
-                                    <Typography variant="body1">
-                                        {d.text}
-                                    </Typography>
-                                </div>
-                            </Grid>
-                        ))
-                    }
-                </Grid>
+            <div className="lowerHeroWrapper">
+                <div className="lowerHero">
+                    <Grid container spacing={5}>
+                        {
+                            lowerHeroData.map((d, i) => (
+                                <Grid item xs={12} lg={4} key={i}>
+                                    <div className="wrapper">
+                                        <d.icon size={50} style={{ backgroundImage: 'linear-gradient(to right, #DB3BC1 18%, #143796 92%) !important', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }} />
+                                        <Typography variant="h5">
+                                            {d.title}
+                                        </Typography>
+                                        <Typography variant="body1">
+                                            {d.text}
+                                        </Typography>
+                                    </div>
+                                </Grid>
+                            ))
+                        }
+                    </Grid>
+                </div>
             </div>
         </div>
     )

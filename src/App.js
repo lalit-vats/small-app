@@ -1,6 +1,6 @@
 import Hero from "./Components/Hero";
 import Productivity from "./Pages/Productivity";
-
+import ProductivitySmallApp from "./Pages/ProductivitySmallApps";
 
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <>
       <Hero />
       <Productivity />
+      <ProductivitySmallApp/>
     </>
   );
 }
